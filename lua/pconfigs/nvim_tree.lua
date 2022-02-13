@@ -1,7 +1,7 @@
 local config = function()
     local tree_cb = require "nvim-tree.config".nvim_tree_callback
     require("nvim-tree").setup {
-        gitignore = false,
+        gitignore = true,
         ignore = {".git", "node_modules", ".cache"},
         open_on_tab = true,
         disable_netrw = false,
