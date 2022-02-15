@@ -93,7 +93,7 @@ local function startup_plugins()
                     "hrsh7th/cmp-path", -- Completion for file path
                     "hrsh7th/cmp-buffer", -- Completion for buffer words
                     "hrsh7th/cmp-cmdline",
-                    "hrsh7th/cmp-vsnip",
+                    --"hrsh7th/cmp-vsnip",
                     "rafamadriz/friendly-snippets",
                     "onsails/lspkind-nvim",
                 },
@@ -155,12 +155,13 @@ local function startup_plugins()
                 end
             }
 
-            use {
-                "blackCauldron7/surround.nvim",
+            --[[ use {
+                -- "blackCauldron7/surround.nvim",
+				"tpope/vim-surround",
                 config = function()
                     require "surround".setup {mappings_style = "surround"}
                 end
-            }
+            } ]]
 
             use {"liuchengxu/vista.vim", config = require("pconfigs.vista")}
 
